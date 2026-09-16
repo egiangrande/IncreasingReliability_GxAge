@@ -177,7 +177,7 @@ drift <- "-log1p(exp(-(drift+driftbyage*agetrend)))-1e-6"
                 MANIFESTMEANS=matrix(c('td1*tdpreds[rowi,1]+td2*tdpreds[rowi,2]+td3*tdpreds[rowi,3]+td4*tdpreds[rowi,4]+td5*tdpreds[rowi,5]',
                                        'td1*tdpreds[rowi,1]+td2*tdpreds[rowi,2]+td3*tdpreds[rowi,3]+td4*tdpreds[rowi,4]+td5*tdpreds[rowi,5]'),2,1),
                 MANIFESTVAR=c(ressd,0,
-                             "ressdCor",ressd), 
+                             ressdCor,ressd), 
                 PARS = c(PARS,
                          "td1", "td2", "td3", "td4", "td5")
   )
